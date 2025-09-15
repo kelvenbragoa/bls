@@ -1,6 +1,10 @@
 <script setup>
 import { onBeforeMount, reactive, ref, onMounted, watch } from "vue";
+import axios from "axios";
+import { RouterView, RouterLink, useRouter, useRoute } from 'vue-router';
 
+
+const router = useRouter();
 const user = ref(null)
 function smoothScroll(id) {
     document.body.click();
@@ -34,10 +38,10 @@ onMounted(() => {
 </script>
 
 <template>
-    <a class="flex items-center" href="#">
+    <router-link class="flex items-center" to="/">
         <img src="/logo.png" class="w-20 h-12" alt="">
         <span class="text-surface-900 dark:text-surface-0 font-medium text-2xl leading-normal mr-20"></span>
-    </a>
+    </router-link>
     <Button
         class="lg:!hidden"
         text

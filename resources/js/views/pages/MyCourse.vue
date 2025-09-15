@@ -138,7 +138,7 @@ onMounted(() => {
         </Carousel>
     </div>
             <FooterWidget />
-            <FloatingChat />
+            <!-- <FloatingChat /> -->
         </div>
     </div>
 </template>

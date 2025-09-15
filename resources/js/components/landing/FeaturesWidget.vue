@@ -36,7 +36,7 @@ const getData = async (page = 1) => {
             },
         })
         .then((response) => {
-            courses.value = response.data.courses;
+            courses.value = response.data.data;
 
             // console.log(courses.value);
             isLoadingDiv.value = false;

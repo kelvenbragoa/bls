@@ -19,7 +19,7 @@ import FloatingChat from '@/components/FloatingChat.vue';
             <FeaturesWidget />
             <PricingWidget />
             <FooterWidget />
-            <FloatingChat />
+            <!-- <FloatingChat /> -->
         </div>
     </div>
 </template>
