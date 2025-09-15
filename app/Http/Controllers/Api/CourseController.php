@@ -161,10 +161,11 @@ class CourseController extends Controller
         return response()->json(['message' => 'User enrolled successfully']);
     }
 
-    public function addTopic(Request $request, Course $course)
+    public function addTopic(Request $request, $id)
     {
         // Logic to add a topic to the course
         // This could involve creating a new topic and associating it with the course
+        $course = Course::findOrFail($id);
         $data = $request->validate([
             'title' => 'required|string',
             'content' => 'required|string',
